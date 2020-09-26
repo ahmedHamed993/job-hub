@@ -1,0 +1,180 @@
+.right-section 
+{
+    width:30%;
+    @media only screen and(max-width:414px) 
+    {
+        width:100%;
+    }
+    .search-part 
+    {
+        background-color:$offwhite;
+        padding:20px 0;
+        margin-bottom:30px;
+        .container 
+        {
+            input 
+            {
+                width:100%;
+                border:1px solid $lightGray;
+                padding:10px;
+                outline:none;
+            }
+            .square-btn 
+            {
+                margin-top:15px;
+            }
+        }
+    }
+    .category-part 
+    {
+        background-color:$offwhite;
+        padding:20px 0;
+        margin-bottom:30px;
+        .container 
+        {
+            ul 
+            {
+                list-style: none;
+                li 
+                {
+                    color:black;
+                    text-transform:capitalize;
+                    font-size:20px; 
+                    a
+                    {
+                        font-size:17px;
+                        color:$darkBlue;
+                        transition:.4s;
+                    }
+                    &:hover 
+                    {
+                        a 
+                        {
+                            color:$mainBlue;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .recent-posts 
+    {
+        
+        background-color:$offwhite;
+        padding:20px 0;
+        margin-bottom:30px;
+        .container
+        {
+            .recent-post 
+            {
+                display:flex; 
+                margin-bottom:10px;
+                img 
+                {
+                    margin-right:10px;
+                }
+                .recent-post-info 
+                {
+                    display:flex;
+                    flex-direction: column;
+                    .post-title 
+                    {
+                        a 
+                        {
+                            color:$darkGray;
+                            text-transform: capitalize;
+                        }
+                        &:hover 
+                        {
+                            a 
+                            {
+                                color:$mainBlue;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    .post-date 
+                    {
+                        color:$darkBlue;
+                    }
+                }
+            }
+        }
+    }
+    .tag-clouds 
+    {
+        background-color:$offwhite;
+        padding:20px 0;
+        margin-bottom:30px;
+        .container 
+        {
+            h3
+            {
+                color:black;
+                text-transform:capitalize;
+                font-size:20px; 
+            }
+            span 
+            {
+                padding:5px 7px;
+                border:1px solid $lightGray; 
+                margin:10px 10px 0px 0;
+                display:inline-block;
+                color:$darkGray;
+                font-size:14px;
+                text-transform:capitalize;
+                cursor:pointer;
+                transition:.3s;
+                &:hover 
+                {
+                    background-color:$mainBlue;
+                    color:white;
+                }
+            }
+
+        }
+    }
+    .insta-feeds
+    {
+        background-color:$offwhite;
+        padding:20px 0;
+        margin-bottom:30px; 
+        text-align: center;
+        .container 
+        {
+            img 
+            {
+                margin-bottom:0;
+                @media only screen and (max-width:768px)
+                {
+                    margin-bottom:10px;
+                }
+            }
+        }
+       
+    }
+    .new-settler 
+    {
+        background-color:$offwhite;
+        padding:20px 0;
+        margin-bottom:30px;  
+        .container 
+        {
+            h2 
+            {
+                color:black;
+                text-transform:capitalize;
+                font-size:20px; 
+            }
+            input 
+            {
+                width:100%;
+                border:1px solid $lightGray;
+                outline:none;
+                padding:15px;
+                margin-bottom:10px;
+            }
+        }
+    }
+}

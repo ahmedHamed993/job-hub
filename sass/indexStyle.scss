@@ -1,0 +1,217 @@
+@import "component/_variables.scss";
+@import "component/_fonts.scss";
+@import "component/_globalClasses.scss";
+@import "component/_buttons.scss";
+@import "main_component/_navbar.scss";
+@import "main_component/find_jop-middle.scss";
+@import "main_component/two-cards-gb";
+@import "main_component/testimonials_part";
+@import "main_component/start_finding";
+@import "main_component/want_hire";
+@import "main_component/footer.scss";
+
+
+
+// ------------------------------------------------
+
+body{
+    width:100%;
+}
+.row 
+{
+    margin-right:0;
+    @media only screen and (max-width:414px)
+    {
+        margin-left:0;
+    }
+}
+svg 
+{
+    font-family: "Font Awesome 5 Free";
+}
+//find jop
+.find-jop 
+{
+    background: $mainBlue;
+    clear:both;
+    width:100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%);
+    border-radius:0 0 0 50px;
+    position: relative;
+    top:-95px;
+    left:0;
+    overflow: hidden;
+    padding-bottom:170px;
+    .container 
+    {
+        // find jop top 
+        .find-jop-top 
+        {
+            margin-top:250px;
+            margin-bottom:50px;
+            text-align:center;
+            h2 
+            {
+                font-size:3rem;
+                color:white;
+            }
+            p 
+            {
+                color:white;
+                font-size:18px;
+            }
+        }
+        // find jop middle
+       
+        // find jop bottom 
+        .find-jop-bottom 
+        {
+            margin:25px 0;
+            text-align:center;
+            color:white;
+            span 
+            {
+                display:inline-block;
+                margin-right:20px;
+                font-size:18px;
+            }
+        }
+    }
+
+}
+// end find jop 
+// -------------------------------------------------------
+// owl carousel for brands
+.carousel-brands 
+{
+    .container
+    {
+        .owl-one
+        {
+            .owl-item 
+            {
+                padding:50px;
+            }
+        }
+    }
+}
+//end owl carousel 
+// ------------------------------------------------------------
+//browse jop 
+.browse-jop
+{
+    margin:50px 0;
+    .container 
+    {
+        ///////////////////////////////////////////////////////////
+        .browse-info 
+        {
+            text-align:center;
+            margin-bottom:40px;
+            h3 
+            {
+                font-size:2.5rem;
+                font-weight:bold;
+                margin-bottom:15px;
+                span 
+                {
+                    color:$mainBlue;
+                }
+            }
+            p 
+            {
+                color:$darkGray;
+                margin-bottom:25px;
+            }
+        }
+        .browse-cards 
+        {
+            .row 
+            {
+
+                .card 
+                {
+                    border-radius:0;
+                    padding:50px 20px;
+                    div 
+                    {
+                        img 
+                        {
+                            padding-bottom:50px;
+                        }
+                    }
+                    h5 
+                    {
+                        font-weight:bold;
+                        font-size:1.5rem;
+                    }
+                    p 
+                    {
+                        margin:15px 0;
+                        color:$darkGray;
+                    }
+                    a 
+                    {
+                        text-decoration:none;
+                        color:$thirdBlue;
+                        font-size:20px;
+                        text-transform:capitalize;
+                    }
+                }
+            }
+        }
+
+        ///////////////////////////////////////////////////////////
+    }
+}
+//end browse hop 
+//-------------------------------------------------------
+// start browse top 
+.browse-top 
+{
+    margin:80px 0;
+    .browse-top-info 
+    {
+        text-align:center;
+        h3 
+        {
+            font-size:3rem;
+            text-transform:capitalize;
+            font-weight:bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        p 
+        {
+            margin:20px 0;
+        }
+    }
+    .app-slider 
+    {
+        .owl-two 
+        {
+            .item 
+            {
+                border:1px solid $lightGray;
+                padding:40px 30px;
+                img 
+                {
+                    width:50px;
+                    margin-bottom:40px;
+                }
+                h3 
+                {
+                    font-size:25px;
+                    text-transform:capitalize;
+                    margin-bottom:15px;
+                }
+                p 
+                {
+                    color:$darkGray;
+                    margin-bottom:25px;
+                }
+            }
+        }
+    }
+}
+//-------------------------------------------

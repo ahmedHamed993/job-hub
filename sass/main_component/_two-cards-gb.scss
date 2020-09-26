@@ -1,0 +1,59 @@
+@import "../component/variables";
+.two-cards 
+{
+    .container 
+    {
+        .main-content 
+        {
+            display:flex;
+            justify-content: space-between;
+            @media only screen and (max-width:768px)
+            {
+                display:block;
+            }
+            .card 
+            {
+                flex-direction: row;
+                padding:70px 0px 40px;
+                width:49%;
+                border-radius:15px;
+                color:white;
+                @media only screen and (max-width:768px)
+                {
+                    width:100%;
+                }
+                .content 
+                {
+                    padding:30px 25px;
+                    h5 
+                    {
+                        font-weight:bold;
+                    }
+                    p 
+                    {
+                        margin:15px 0;
+                    }
+
+                }
+                &.green-card 
+                {
+                    background-color:$mainGreen;
+                    border:1px solid $mainGreen;
+                    @media only screen and (max-width:768px)
+                    {
+                        margin-bottom:30px;
+                    }
+
+                }
+                &.blue-card 
+                {
+                    background-color:$mainBlue;
+                    border:1px solid $mainBlue;
+
+                }
+
+            }
+        }
+    }
+   
+}

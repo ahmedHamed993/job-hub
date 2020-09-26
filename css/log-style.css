@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%; }
+
+.nice-select {
+  float: none; }
+
+body {
+  background-color: #11E276;
+  font-family: tahoma; }
+
+.form-container {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.356);
+  margin: 50px auto;
+  padding: 0 30px 40px;
+  border-radius: 10px; }
+  .form-container .img-container {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px; }
+    .form-container .img-container img {
+      width: 80px; }
+  .form-container h2 {
+    color: white;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: 3px; }
+  .form-container .fields-container .email-container,
+  .form-container .fields-container .pass-container,
+  .form-container .fields-container .full-name-container,
+  .form-container .fields-container .confirm-pass-container {
+    margin: 30px 0;
+    position: relative; }
+    .form-container .fields-container .email-container h6,
+    .form-container .fields-container .pass-container h6,
+    .form-container .fields-container .full-name-container h6,
+    .form-container .fields-container .confirm-pass-container h6 {
+      color: white;
+      font-size: 15px;
+      font-weight: normal;
+      margin: 0;
+      text-transform: capitalize; }
+    .form-container .fields-container .email-container input,
+    .form-container .fields-container .pass-container input,
+    .form-container .fields-container .full-name-container input,
+    .form-container .fields-container .confirm-pass-container input {
+      width: 100%;
+      outline: none;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: transparent;
+      color: white;
+      cursor: pointer; }
+      .form-container .fields-container .email-container input::placeholder,
+      .form-container .fields-container .pass-container input::placeholder,
+      .form-container .fields-container .full-name-container input::placeholder,
+      .form-container .fields-container .confirm-pass-container input::placeholder {
+        color: #fbf9ff; }
+  .form-container .fields-container .login-btn {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #3a77ff;
+    border-radius: 50px;
+    margin: 15px 0;
+    text-transform: capitalize; }
+  .form-container .some-links a {
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #5895ff; }
+    .form-container .some-links a:hover {
+      color: white; }
+
+/*# sourceMappingURL=log-style.css.map */

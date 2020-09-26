@@ -1,0 +1,108 @@
+@import "component/variables";
+@import "component/globalClasses.scss";
+
+body 
+{
+    background-color:$mainGreen;
+    font-family:tahoma;
+}
+.form-container 
+{
+    width:400px;
+    background-color:rgba(0, 0, 0, 0.356);
+    margin:50px auto;
+    padding:0 30px 40px;
+    border-radius: 10px;
+    .img-container 
+    {
+        margin:auto;
+        width:80px;
+        height:80px;
+        transform:translateY(-50%);
+        background-color:transparent;
+        border-radius:50%;
+        text-align:center;
+        line-height:50px;
+        // box-shadow:5px 5px 10px gray;
+        img 
+        {
+            width:80px;
+        }
+        
+    }
+    h2 
+    {
+        color:white;
+        text-align:center;
+        font-family: tahoma;
+        font-size:2rem;
+        font-weight:normal;
+        text-transform:capitalize;
+        letter-spacing: 3px;
+    }
+    .fields-container 
+    {
+        .email-container,
+        .pass-container,
+        .full-name-container,
+        .confirm-pass-container
+        {
+            margin:30px 0;
+            position: relative;
+            h6 
+            {
+                color:white;
+                font-size:15px;
+                font-weight:normal;
+                margin:0;
+                text-transform:capitalize;
+            }
+            input 
+            {
+                width:100%;
+                outline:none;
+                padding:10px;
+                border:none;
+                border-bottom:1px solid white;
+                background-color:transparent;
+                color:white;
+                cursor:pointer;
+                &::placeholder 
+                {
+                    color:$offwhite;
+                }
+                
+            }
+        }
+        .login-btn 
+        {
+            width:100%;
+            padding:10px;
+            text-align:center;
+            border:none;
+            outline:none;
+            color:white;
+            background-color:$mainBlue;
+            border-radius:50px;
+            margin:15px 0;
+            text-transform:capitalize;
+        }
+        
+    }
+    .some-links 
+    {
+        a 
+        {
+            display:block;
+            font-size:16px;
+            text-transform:capitalize;
+            font-weight:normal;
+            margin-bottom:5px;
+            color:$thirdBlue;
+            &:hover 
+            {
+                color:white;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.find-jop-middle {
+  border: 5px solid rgba(151, 181, 208, 0.44);
+  border-radius: 100px;
+  margin: 20px auto;
+  position: relative; }
+  @media only screen and (max-width: 414px) {
+    .find-jop-middle {
+      border-radius: 0; } }
+  .find-jop-middle div {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    height: 100%; }
+    @media only screen and (max-width: 414px) {
+      .find-jop-middle div {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px; } }
+    .find-jop-middle div:first-of-type svg {
+      position: absolute;
+      top: 19px;
+      left: 12px;
+      z-index: 5;
+      opacity: 0.2; }
+    .find-jop-middle div:first-of-type input {
+      border-radius: 100px 0 0 100px;
+      width: 100%;
+      padding-left: 45px; }
+      @media only screen and (max-width: 414px) {
+        .find-jop-middle div:first-of-type input {
+          border-radius: 0; } }
+    .find-jop-middle div:nth-of-type(2) svg {
+      position: absolute;
+      top: 19px;
+      left: 9px;
+      z-index: 5;
+      opacity: 0.2; }
+    .find-jop-middle div:nth-of-type(2) input {
+      border-radius: none;
+      padding-left: 35px; }
+    .find-jop-middle div input {
+      border: none;
+      padding: 15px;
+      position: relative;
+      width: 100%; }
+  .find-jop-middle select {
+    width: 25%;
+    height: 56px;
+    padding: 15px;
+    outline: none;
+    border: none; }
+  .find-jop-middle .nice-select {
+    float: none;
+    line-height: 53px;
+    border-radius: 0 !important; }
+    .find-jop-middle .nice-select .list {
+      width: 270px;
+      border-radius: 0; }
+    .find-jop-middle .nice-select .option:hover {
+      background-color: #11E276;
+      color: white; }
+  .find-jop-middle .search-btn {
+    display: inline-block;
+    width: 23.8%;
+    background-color: #11E276;
+    padding: 14px;
+    border-radius: 0 100px 100px 0;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    text-align: center;
+    cursor: pointer; }
+    @media only screen and (max-width: 414px) {
+      .find-jop-middle .search-btn {
+        display: block;
+        width: 100%;
+        position: unset;
+        border-radius: 0;
+        margin-bottom: 0; } }
+    .find-jop-middle .search-btn svg {
+      margin-right: 10px; }
+
+/*# sourceMappingURL=find_jop-middle.css.map */

@@ -1,0 +1,367 @@
+@import "component/variables";
+@import "component/fonts";
+@import "component/globalClasses";
+@import "component/buttons";
+@import "main_component/navbar";
+@import "main_component/footer";
+//blog header 
+.blog-header 
+{
+    background-color:$mainBlue;
+    position: relative;
+    top:-95px;
+    left:0;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    border-radius:0 0 0 50px;
+    color:white;
+    height:500px;
+    .container 
+    {
+        h2 
+        {
+            line-height:500px;
+            font-size:3rem;
+            font-weight:bold;
+            text-transform: capitalize;
+        }
+    }
+}
+//blog details container 
+.blog-details-container 
+{
+    .container 
+    {
+        .main-content 
+        {
+            display:flex;
+            @media only screen and (max-width:414px)
+            {
+                display:block;
+            }
+            .left-section 
+            {
+                width:68%;
+                margin-right:2%;
+                @media only screen and (max-width:414px)
+                {
+                    width:100%;
+                }
+                .post-details 
+                {
+                    .post-img 
+                    {
+                        width:100%;
+                        img 
+                        {
+                            width:100%;
+                        }
+                    }
+                    .post-title 
+                    {
+                        color:black;
+                        font-size:1.6rem;
+                        margin:10px 0;
+                    }
+                    .post-statics 
+                    {
+                        margin-bottom:15px;
+                        margin-top:10px;
+
+                        span 
+                        {
+                            margin-right:10px;
+                            a 
+                            {
+                                color:$medGray;
+                                &:hover 
+                                {
+                                    text-decoration:none;
+                                    color:$thirdBlue;
+                                }
+                            }
+
+                        }
+                    }
+                    .post-text 
+                    {
+                        color:$darkBlue;
+                    }
+                    .quote 
+                    {
+                        background-color:$offwhite;
+                        padding:40px;
+                        p 
+                        {
+                            display:block;
+                            border-left:5px solid $darkGray;
+                            padding-left:10px;
+                            background-color:white;
+                            padding:15px;
+                            color:$medGray;
+                        }
+                    }
+                    .post-likes-socials 
+                    {
+                        margin:20px 0;
+                        span 
+                        {
+                            &.likes-counts 
+                            {
+                                color:$darkBlue;
+                            }
+                            &.socials-icons 
+                            {
+                                float:right;
+                                svg 
+                                {
+                                    margin-right:10px;
+                                    color:$medGray;
+                                    cursor:pointer;
+                                    &:hover 
+                                    {
+                                        color:$mainBlue;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .posts-paggination 
+                    {
+                        display:flex;
+                        @media only screen and (max-width:414px)
+                        {
+                            display:block;
+                        }
+                        span 
+                        {
+                            display:flex;
+                            @media only screen and (max-width:414px)
+                            {
+                                justify-content: center;
+                                margin-bottom:15px;
+                            }
+                            img
+                            {
+                                display:block;
+                                position: relative;
+                                &::before 
+                                {
+                                    content:"&#60";
+                                }
+                            }
+                            .prev-link-title,
+                            .next-link-title 
+                            {
+                                display: flex;
+                                flex-direction:column;
+                                a 
+                                {
+                                    color:$darkBlue;
+                                    &:hover 
+                                    {
+                                        text-decoration: none;
+                                    }
+                                   
+                                }
+                                h4 
+                                {
+                                    color:$darkBlue;
+                                    display: block;
+                                    cursor:pointer;
+                                    transition:.3s;
+                                    text-transform: capitalize;
+                                    &:hover 
+                                    {
+                                        color:$mainBlue;
+                                    }
+                                }
+                            }
+                            .prev-link-title 
+                            {
+                                margin-left:10px;
+                            }
+                            .next-link-title 
+                            {
+                                text-align:right;
+                                margin-right:10px;
+                            }
+                        }
+                    }
+                    .blog-author 
+                    {
+                        padding:30px;
+                        background-color:$offwhite;
+                        @media only screen and (max-width:414px)
+                        {
+                            padding:10px;
+                        }
+                        img 
+                        {
+                            float:left;
+                        }
+                        .author-info 
+                        {
+                            margin-left:auto;
+                            float:right;
+                            width:83%;
+                            @media only screen and (max-width:414px)
+                            {
+                                width:70%;
+                            }
+                            h6 
+                            {
+                                color:$darkGray;
+                                cursor:pointer;
+                                &:hover 
+                                {
+                                    color:$mainBlue;
+                                }
+                            }
+                            p 
+                            {
+                                color:$darkGray;
+                            }
+                        }
+                    }
+                    .comments-section 
+                    {
+                        .comments-number 
+                        {
+                            color:$darkBlue;
+                        }
+                        .comment 
+                        {
+                            margin:35px 0;
+                            img 
+                            {
+                               float:left;
+                               @media only screen and (max-width:414px)
+                               {
+                                   float:none;
+                                   display:block;
+                                   margin:auto;
+                               }
+                            } 
+                            .comment-text 
+                            {
+                               width:88%;
+                               margin-left:auto;
+                               @media only screen and (max-width:414px)
+                               {
+                                   width:100%;
+                               }
+                                p 
+                                {
+                                    color:$medGray;
+                                    @media only screen and (max-width:414px)
+                                    {
+                                        text-align:center;
+                                    }
+                                }
+                               .comment-writer 
+                                {
+                                    a 
+                                    {
+                                       color:black;
+                                       text-transform: capitalize;
+                                        &:hover 
+                                        {
+                                            color:$secondBlue;
+                                            text-decoration:none;
+                                        }
+                                    }
+                                    @media only screen and (max-width:414px)
+                                    {
+                                        display:block;
+                                        text-align:center;
+                                    }
+                                }
+                                .comment-date 
+                                {
+                                    color:$darkGray;
+                                    margin:0 15px;
+                                    @media only screen and (max-width:414px)
+                                    {
+                                        display:block;
+                                        text-align:center;
+                                        margin:10px 0;
+                                    }
+                                }
+                                .reply 
+                                {
+                                    float:right;
+                                    @media only screen and (max-width:414px)
+                                    {
+                                        float:none;
+                                        display:block;
+                                        text-align:center;
+                                    }
+                                    a 
+                                    {
+                                        color:$darkGray;
+                                        text-transform:uppercase;
+                                        &:hover 
+                                        {
+                                            text-decoration:none;
+                                            color:$secondBlue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .leave-reply 
+                    {
+                        margin:20px 0;
+                        h4 
+                        {
+                            font-size:18px;
+                            margin-bottom:10px;
+                        }
+                        .reply-form 
+                        {
+                            textarea 
+                            {
+                                width:100%;
+                                resize:none;
+                                border:1px solid $medGray;
+                                padding:10px 20px;
+                                outline:none;
+                            }
+                            input 
+                            {
+                                width:49%;
+                                padding:10px 20px;
+                                outline:none;
+                                margin:15px 0;
+                                border:1px solid $medGray;
+                                &:first-of-type 
+                                {
+                                    margin-right:2%;
+                                }
+                                &:last-of-type {
+                                    float:right;
+                                }
+                            }
+                            .square-btn 
+                            {
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+
+                }
+            }
+            //right section 
+            @import "main_component/blog-right-section";
+
+        }
+    }
+}
+//footer 
+.footer 
+{
+    margin-top:0;
+    padding-top:100px;
+}

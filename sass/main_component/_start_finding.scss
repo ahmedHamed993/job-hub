@@ -1,0 +1,48 @@
+@import "../component/variables";
+.start-find 
+{
+    position: relative;
+    z-index:3;
+    .container 
+    {
+        .sf-content 
+        {
+            display:flex;
+            justify-content: space-between;
+            border:1px solid $lightGray;
+            padding:40px 20px;
+            border-radius:15px;
+            background-color:white;
+            @media only screen and (max-width:414px)
+            {
+                display:block;
+            }
+            .left-part 
+            {
+                width:70%;
+                h3 
+                {
+                    font-weight:bold;
+                    text-transform:capitalize;
+                    font-size:30px;
+                }
+                p 
+                {
+                    color:$darkGray;
+                }
+            }
+            .right-part 
+            {
+                width:25%;
+                text-align:right;
+                padding-top:25px;
+                @media only screen and (max-width:414px)
+                {
+                    width:100%;
+                    text-align:left;
+                }
+            }
+        }
+    }
+}
+//---------------------------------------------------------------

@@ -1,0 +1,90 @@
+@import "../component/variables";
+.testimonials 
+{
+    margin:90px 0;
+   
+    .row 
+    {
+        margin-right:0;
+        .test-slider 
+        {
+            padding:0 80px ;
+            .owl-three 
+            {
+              .owl-nav 
+              {
+                  font-size:30px;
+                  margin-top:-30 px;
+                  .owl-prev,.owl-next 
+                  {
+                      &:hover 
+                      {
+                          background-color:$mainBlue;
+                      }
+                  }
+              }
+                .item 
+                {
+                    img 
+                    {
+                        width:150px;
+                        margin:30px 20px 20;
+                        @media only screen and (max-width:768px)
+                        {
+                            width:20px;
+                        }
+                    }
+                    p 
+                    {
+                        color:$darkGray;
+                        margin:40px 0;
+                        @media only screen and (max-width:768px)
+                        {
+                            margin-tOP:15px;
+                            font-size:18px;
+                        }
+                    }
+                    .client-profile 
+                    {
+                        display:flex;
+                        img 
+                        {
+                            width:150px;
+                        }
+                        .client-profile-info 
+                        {
+                            display:flex;
+                            flex-direction:column;
+                            justify-content: center;  
+                            @media only screen and (max-width:768px)
+                            {
+                                margin-top:-25px;
+                            } 
+                            h4 
+                            {
+                                margin-top:-30px;
+                                text-transform:capitalize;
+                                font-weight:bold;
+                                @media only screen and (max-width:768px)
+                                {
+                                    font-size:19px;
+                                }
+                            }       
+                            span
+                            {
+                                color:$darkGray;
+                            }          
+                        }
+                    }
+                }
+            }
+        }
+        .test-img 
+        {
+            img 
+            {
+                width:100%;
+            }
+        }
+    }
+}

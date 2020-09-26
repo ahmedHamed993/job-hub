@@ -1,0 +1,129 @@
+@import "../component/variables";
+.footer 
+{
+    background:url("../images/footer-bg.png");
+    background-attachment: fixed;
+    padding:200px 0 50px;
+    margin-top:-40px;
+    max-width:100%;
+    overflow:hidden;
+    .row 
+    {
+        .logo-part 
+        {
+            padding:0 35px 0 45px;
+            @media only screen and (max-width:768px)
+            {
+                margin-bottom:30px;
+            }
+            p 
+            {
+                color:$darkGray;
+                margin:20px 0;
+            }
+            .social-icons
+            {
+                svg
+                {
+                    display: inline-block;
+                    color:$mainBlue;
+                    border: 1px solid $mainBlue;
+                    border-radius: 50%;
+                    padding: 10px;
+                    box-sizing: content-box;
+                    font-size: 28px;
+                    width: 20px;
+                    height: 20px;
+                    cursor:pointer;
+                    transition:.3s;
+                    &:hover 
+                    {
+                        background-color:$mainBlue;
+                        color:white;
+                    }
+                }
+            }
+            
+        }
+        .top-category,
+        .for-employer,
+        .company,
+        .subscribe-part 
+
+        {
+            padding-left:45px;
+            margin-bottom:20px;
+            h2 
+            {
+                color:black;
+                font-size:1.7rem;
+                text-transform:capitalize;
+                margin-bottom:20px;
+            }
+            ul 
+            {
+                list-style:none;
+                text-align:left;
+                padding:0;
+                li 
+                {
+                    margin:10px 0;
+                    text-transform:capitalize;
+                    &:hover 
+                    {
+                        a 
+                        {
+                            color:black;
+                            text-decoration:underline;
+                        }
+                    }
+                    a 
+                    {
+                        color:$darkGray;
+                        transition:.3s;
+
+                    }
+                }
+            }
+        }
+        .subscribe-part 
+        {
+            p 
+            {
+                color:$darkGray;
+                margin:20px 0;
+            }
+            .sub-input-btn 
+            {
+                position: relative;
+                height:45px;
+                input 
+                { 
+                    border:none;
+                    outline:none;
+                    border-radius:10px;
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    padding:5px 15px;
+                    height:100%;
+                    background-color:#eee;
+                    border-radius:20px;
+                }
+                a 
+                {
+                    display:inline-block;
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    padding:0px 15px;
+                    height:100%;
+                    line-height:45px;
+                    border-radius:20px;
+                    
+                }
+            }
+        }
+    }
+}

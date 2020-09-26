@@ -1,0 +1,127 @@
+@import "../component/variables";
+.find-jop-middle 
+{
+
+    border:5px solid rgba(151, 181, 208, 0.44);
+    border-radius:100px;
+    margin:20px auto;
+    position: relative;
+    @media only screen and (max-width:414px)
+    {
+        border-radius:0;
+    }
+    div 
+    {
+        display:inline-block;
+        position: relative;
+        width:25%;
+        height:100%;
+        @media only screen and (max-width:414px)
+        {
+            display:block;
+            width:100%;
+            margin-bottom:15px;
+        }
+        &:first-of-type
+        {
+            svg 
+            {
+                position: absolute;
+                top: 19px;
+                left: 12px;
+                z-index: 5;
+                opacity: 0.2;
+            }
+            input 
+            {
+                border-radius:100px 0 0 100px;
+                width:100%;
+                padding-left:45px;
+                @media only screen and (max-width:414px)
+                {
+                    border-radius:0;
+                }
+            }
+        }
+        &:nth-of-type(2)
+        {
+            svg
+            {
+                position: absolute;
+                top: 19px;
+                left: 9px;
+                z-index:5;
+                opacity: 0.2;
+
+
+            }
+            input 
+            {
+                border-radius:none;
+                padding-left:35px;
+
+            }
+        }
+        input 
+        {
+            border:none;
+            padding:15px;
+            position:relative;
+            width:100%;
+        }
+    }
+    select 
+    {
+        width:25%;
+        height:56px;
+        padding:15px;
+        outline:none;
+        border:none;
+    }
+    .nice-select 
+    {
+        float:none;
+        line-height:53px;
+        border-radius:0 !important;
+        .list 
+        {
+            width:270px;
+            border-radius:0;
+        }
+        .option:hover 
+        {
+            background-color:$mainGreen;
+            color:white;
+        }
+
+    }
+    .search-btn 
+    {
+        display:inline-block;
+        width:23.8%;
+        background-color:$mainGreen;
+        padding:14px;
+        border-radius:0 100px 100px 0;
+        color:white;
+        font-size:20px;
+        position: absolute;
+        height:100%;
+        right:0;
+        text-align:center;
+        cursor:pointer;
+
+        @media only screen and (max-width:414px)
+        {
+            display:block;
+            width:100%;
+            position:unset;
+            border-radius:0;
+            margin-bottom:0;
+        }
+        svg
+        {
+            margin-right:10px;
+        }
+
+    }
+}

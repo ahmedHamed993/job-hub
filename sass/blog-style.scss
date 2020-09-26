@@ -1,0 +1,174 @@
+@import "component/variables";
+@import "component/fonts";
+@import "component/globalClasses";
+@import "component/buttons";
+@import "main_component/navbar";
+@import "main_component/footer";
+//blog header 
+.blog-header 
+{
+    background-color:$mainBlue;
+    position: relative;
+    top:-95px;
+    left:0;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    border-radius:0 0 0 50px;
+    color:white;
+    height:500px;
+    .container 
+    {
+        h2 
+        {
+            line-height:500px;
+            font-size:3rem;
+            font-weight:bold;
+            text-transform: capitalize;
+        }
+    }
+}
+//blog container 
+.blog-container 
+{
+    .container 
+    {
+        .main-content 
+        {
+            display:flex;
+            @media only screen and (max-width:414px)
+            {
+                display:block;
+            }
+            .left-section
+            {
+                width:68%;
+                margin-right:2%;
+                margin-bottom:80px;
+                @media only screen and(max-width:414px) 
+                {
+                    width:100%;
+                }
+                .blog-post
+                {
+                    border:1px solid $lightGray;
+                    margin-bottom:30px;
+                    box-shadow:5px 5px 10px $lightGray;
+                    .img-date-container 
+                    {
+                        position:relative;
+                        img 
+                        {
+                            width:100%;
+                        }
+                        .date-info 
+                        {
+                            background-color:$mainBlue;
+                            color:white;
+                            border-radius:10px;
+                            position: absolute;
+                            bottom: -30px;
+                            width: 90px;
+                            height: 90px;
+                            text-align: center;
+                            font-size: 20px;
+                            left: 70px;
+                            display:flex;
+                            flex-direction:column;
+                            justify-content:center;
+                            text-transform: capitalize;
+                        }
+                    }
+                    .blog-title 
+                    {
+                        margin-left:40px;
+                        margin-top:50px;
+                        a 
+                        {
+                            color:black;
+                        }
+                        &:hover 
+                        {
+                            a 
+                            {
+                                text-decoration:none;
+                                color:$secondBlue;
+                            }
+                        }
+                    }
+                    .post-info 
+                    {
+                        margin-left:40px;
+                        margin-top:10px;
+                        color:$darkGray;
+                    }
+                    .post-statics 
+                    {
+                        margin-left:30px;
+                        margin-bottom:20px;
+                        span 
+                        {
+                            margin:10px;
+                            text-decoration:capitalize;
+                            &:hover 
+                            {
+                                a 
+                                {
+                                    color:$secondBlue;
+                                    text-decoration:none;
+                                }
+                            }
+                            a 
+                            {
+                                color:#999999;
+                                text-decoration:capitalize;
+                            }
+                            svg 
+                            {
+                                margin-right:7px;
+
+                            }
+                        }
+                    }
+                }
+                .paggination 
+                {
+                    span 
+                    {
+                        background-color:$lightGray;
+                        border:1px solid $lightGray;
+                        display:inline-block;
+                        width:45px;
+                        height:45px;
+                        line-height:45px;
+                        text-align:center;
+                        cursor:pointer;
+                        @media only screen and (max-width:375px)
+                        {
+                            width:35px;
+                            height:43px;
+                            line-height:35px;
+                        }
+                        &.active 
+                        {
+                            background-color:$mainBlue;
+                            a 
+                            {
+                                color:white;
+                            }
+                        }
+                        a 
+                        {
+                            color:$darkGray;
+                            &:hover 
+                            {
+                                text-decoration:none;
+                            }
+                        }
+                    }
+                }
+            }
+            //blog right section 
+            @import "main_component/blog-right-section";
+        }
+    }
+}
+
